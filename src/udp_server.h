@@ -18,7 +18,7 @@ public:
     struct sockaddr_in client_addr, serv_addr; //server address and client address
     socklen_t cLen = sizeof(client_addr);
 
-    udp_server(int port, const char* comms_ip);
+    udp_server(int port, std::string comms_ip);
     void recieve_message();
 };
 #endif
